@@ -20,8 +20,8 @@ getFilteredDataSet <- function() {
 
 februaryData <- getFilteredDataSet()
 
-png(file="plot1.png")
+png(file="plot2.png")
 
-hist(februaryData$Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", col="red")
+plot(februaryData$Time, februaryData$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab="")
 
 dev.off()
